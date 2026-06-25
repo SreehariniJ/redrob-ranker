@@ -9,7 +9,7 @@ team_members:
     email: "contact@infinicode.example"
     role: "ML Engineer"
 
-github_repo: "https://github.com/infinicode/redrob-ranker"
+github_repo: "https://github.com/SreehariniJ/redrob-ranker"
 sandbox_link: "https://huggingface.co/spaces/infinicode/redrob-ranker"
 reproduce_command: "python rank.py --candidates ../India_runs_data_and_ai_challenge/candidates.jsonl --out ./InfiniCode.csv"
 
