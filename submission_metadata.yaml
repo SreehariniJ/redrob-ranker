@@ -1,0 +1,46 @@
+team_name: "InfiniCode"
+primary_contact:
+  name: "InfiniCode Member"
+  email: "contact@infinicode.example"
+  phone: "+91-0000000000"
+
+team_members:
+  - name: "InfiniCode Member"
+    email: "contact@infinicode.example"
+    role: "ML Engineer"
+
+github_repo: "https://github.com/infinicode/redrob-ranker"
+sandbox_link: "https://huggingface.co/spaces/infinicode/redrob-ranker"
+reproduce_command: "python rank.py --candidates ../India_runs_data_and_ai_challenge/candidates.jsonl --out ./InfiniCode.csv"
+
+compute:
+  platform: "Local Windows Box"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.13"
+  os: "Windows 11"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: true
+  pre_computation_time_minutes: 2
+
+ai_tools_used:
+  - "Other"
+
+ai_usage_summary: |
+  Used the Antigravity agent to design and implement the system.
+  No candidate data was fed to any LLM. Local semantic search was used.
+
+methodology_summary: |
+  Explicitly-weighted hybrid ranker. We use a 3-part formula:
+  1. Semantic Match (40%): Local all-MiniLM-L6-v2 cosine similarity between JD and candidate summary/experience.
+  2. Rule-based Heuristics (30%): Extraction of vector DBs, Python, retrieval terms from experience (not just skills), with penalization for pure consulting or research backgrounds.
+  3. Behavioral Signals (30%): Log-transformed response rates, github activity, and recency.
+  Runtime is ~1 min for 100K candidates on CPU.
+
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true

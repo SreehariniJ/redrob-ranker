@@ -1,0 +1,101 @@
+candidate_id,rank,score,reasoning
+CAND_0046064,1,0.641,"8.9 years at Salesforce as Senior NLP Engineer with direct FAISS, Pinecone experience; github_activity_score 67.3; no behavioral red flags."
+CAND_0044883,2,0.6251,"6.3 years at Mad Street Den as AI Engineer with direct FAISS, Sentence-Transformers experience; github_activity_score 70.5; no behavioral red flags."
+CAND_0071974,3,0.6118,7.8 years at Netflix as Senior AI Engineer with direct Pinecone experience; github_activity_score 82.8; no behavioral red flags.
+CAND_0088025,4,0.6107,8.6 years at Yellow.ai as Staff Machine Learning Engineer with direct Pinecone experience; github_activity_score 74.6; no behavioral red flags.
+CAND_0055992,5,0.6074,"16.9 years at CRED as AI Engineer with direct FAISS, Sentence-Transformers experience; github_activity_score 65.3; no behavioral red flags."
+CAND_0081686,6,0.6016,"6.0 years at Netflix as Search Engineer with direct FAISS, Sentence-Transformers experience; no behavioral red flags."
+CAND_0018499,7,0.5998,7.2 years at Zomato as Senior Machine Learning Engineer with direct FAISS experience; github_activity_score 94.8; no behavioral red flags.
+CAND_0079064,8,0.5974,"5.2 years at Niramai as Senior Data Scientist with direct FAISS, Sentence-Transformers experience; no behavioral red flags."
+CAND_0077337,9,0.5952,7.0 years at Paytm as Staff Machine Learning Engineer with direct Sentence-Transformers experience; github_activity_score 68.0; no behavioral red flags.
+CAND_0036184,10,0.5936,"6.0 years at CRED as Recommendation Systems Engineer with direct FAISS, Sentence-Transformers experience; no behavioral red flags."
+CAND_0005260,11,0.5876,5.2 years at Netflix as Senior NLP Engineer with direct FAISS experience; no behavioral red flags.
+CAND_0057563,12,0.5866,"6.8 years at Locobuzz as NLP Engineer with direct FAISS, Sentence-Transformers experience; no behavioral red flags."
+CAND_0074735,13,0.5729,5.5 years at Rephrase.ai as Applied ML Engineer with direct Pinecone experience; github_activity_score 87.7; no behavioral red flags.
+CAND_0042029,14,0.5722,6.5 years at Flipkart as Senior Data Scientist with direct Pinecone experience; github_activity_score 78.7; no behavioral red flags.
+CAND_0015578,15,0.5669,5.4 years at Zoho as AI Engineer with direct Pinecone experience; no behavioral red flags.
+CAND_0037566,16,0.566,6.9 years at LinkedIn as Machine Learning Engineer with direct Pinecone experience; github_activity_score 73.4; no behavioral red flags.
+CAND_0066376,17,0.5609,"5.7 years at Dream11 as Applied ML Engineer with direct FAISS, Sentence-Transformers experience; no behavioral red flags."
+CAND_0053591,18,0.5608,5.3 years at Ola as AI Engineer with direct Pinecone experience; github_activity_score 75.8; no behavioral red flags.
+CAND_0030827,19,0.5605,"5.4 years at Freshworks as Senior Data Scientist with direct FAISS, Sentence-Transformers experience; github_activity_score 52.4; no behavioral red flags."
+CAND_0081846,20,0.5592,"6.7 years at Razorpay as Lead AI Engineer with direct FAISS, Sentence-Transformers experience; no behavioral red flags."
+CAND_0091534,21,0.5589,"16.6 years at Flipkart as AI Engineer with direct FAISS, Sentence-Transformers experience; github_activity_score 66.0; no behavioral red flags."
+CAND_0029367,22,0.5572,"5.7 years at Rephrase.ai as Senior Data Scientist with direct FAISS, Sentence-Transformers experience; no behavioral red flags."
+CAND_0064326,23,0.5564,7.6 years at Sarvam AI as Search Engineer with direct Pinecone experience; github_activity_score 61.4; no behavioral red flags.
+CAND_0005649,24,0.5563,"7.4 years at Sarvam AI as Senior Data Scientist with direct FAISS, Sentence-Transformers experience; github_activity_score 80.7; no behavioral red flags."
+CAND_0018722,25,0.5551,"6.6 years at Saarthi.ai as Recommendation Systems Engineer with direct FAISS, Sentence-Transformers experience; github_activity_score 94.3; no behavioral red flags."
+CAND_0079387,26,0.5537,"6.9 years at Microsoft as AI Engineer with direct FAISS, Sentence-Transformers experience; github_activity_score 64.1; no behavioral red flags."
+CAND_0039754,27,0.5521,"16.2 years at Meta as Senior Applied Scientist with direct FAISS, Sentence-Transformers experience; github_activity_score 77.5; no behavioral red flags."
+CAND_0094056,28,0.5489,"5.9 years at Rephrase.ai as NLP Engineer with direct FAISS, Sentence-Transformers experience; github_activity_score 64.8; no behavioral red flags."
+CAND_0052682,29,0.548,6.6 years at Aganitha as NLP Engineer with direct Pinecone experience; github_activity_score 72.4; no behavioral red flags.
+CAND_0065195,30,0.5473,5.1 years at CRED as Search Engineer with direct Pinecone experience; github_activity_score 87.3; no behavioral red flags.
+CAND_0093912,31,0.5461,"5.3 years at Razorpay as Senior Data Scientist with direct FAISS, Sentence-Transformers experience; github_activity_score 81.5; no behavioral red flags."
+CAND_0050454,32,0.5457,"6.8 years at Rephrase.ai as AI Engineer with direct FAISS, Sentence-Transformers experience; no behavioral red flags."
+CAND_0008425,33,0.5427,"7.8 years at Ola as Senior NLP Engineer with direct Sentence-Transformers, Pinecone experience; github_activity_score 53.3; no behavioral red flags."
+CAND_0062247,34,0.5412,"7.3 years at Google as AI Engineer with direct FAISS, Sentence-Transformers experience; github_activity_score 52.7; no behavioral red flags."
+CAND_0027691,35,0.5402,"6.5 years at Haptik as NLP Engineer with direct FAISS, Sentence-Transformers experience; github_activity_score 58.5; no behavioral red flags."
+CAND_0077285,36,0.539,5.5 years at Nykaa as Recommendation Systems Engineer with direct Pinecone experience; github_activity_score 75.6; no behavioral red flags.
+CAND_0037000,37,0.5355,2.7 years at Unacademy as Search Engineer with direct Pinecone experience; github_activity_score 66.8; no behavioral red flags.
+CAND_0086151,38,0.5355,"7.7 years at Wysa as Recommendation Systems Engineer with direct FAISS, Sentence-Transformers experience; github_activity_score 51.7; no behavioral red flags."
+CAND_0011687,39,0.5353,7.8 years at Niramai as Senior NLP Engineer with direct Pinecone experience; github_activity_score 76.3; no behavioral red flags.
+CAND_0002025,40,0.5341,5.9 years at Apple as Senior AI Engineer; github_activity_score 96.9; no behavioral red flags.
+CAND_0051292,41,0.534,"5.2 years at Freshworks as Applied ML Engineer with direct FAISS, Sentence-Transformers experience; github_activity_score 61.7; no behavioral red flags."
+CAND_0098846,42,0.5333,7.6 years at upGrad as AI Engineer with direct Pinecone experience; github_activity_score 86.2; no behavioral red flags.
+CAND_0044855,43,0.5323,"6.6 years at Flipkart as Senior Data Scientist with direct FAISS, Sentence-Transformers experience; no behavioral red flags."
+CAND_0083307,44,0.5312,"7.8 years at CRED as Search Engineer with direct FAISS, Sentence-Transformers experience; github_activity_score 69.2; no behavioral red flags."
+CAND_0070485,45,0.5311,"6.4 years at Saarthi.ai as Search Engineer with direct FAISS, Sentence-Transformers experience; no behavioral red flags."
+CAND_0096172,46,0.5305,"5.2 years at Krutrim as NLP Engineer with direct FAISS, Sentence-Transformers experience; github_activity_score 65.0; no behavioral red flags."
+CAND_0086022,47,0.5303,5.3 years at Sarvam AI as Senior Applied Scientist with direct FAISS experience; github_activity_score 75.2; no behavioral red flags.
+CAND_0041610,48,0.5299,6.7 years at Zoho as Recommendation Systems Engineer with direct Pinecone experience; github_activity_score 52.1; no behavioral red flags.
+CAND_0046525,49,0.5275,6.1 years at Genpact AI as Senior Machine Learning Engineer with direct FAISS experience; no behavioral red flags.
+CAND_0028793,50,0.527,"7.2 years at Google as Search Engineer with direct FAISS, Sentence-Transformers experience; github_activity_score 83.1; no behavioral red flags."
+CAND_0092706,51,0.5268,5.8 years at Unacademy as AI Research Engineer; github_activity_score 65.1; no behavioral red flags.
+CAND_0060054,52,0.5265,"6.4 years at Mad Street Den as AI Engineer with direct FAISS, Sentence-Transformers experience; no behavioral red flags."
+CAND_0049538,53,0.5264,5.8 years at Saarthi.ai as Applied ML Engineer; github_activity_score 90.8; no behavioral red flags.
+CAND_0055905,54,0.5264,"8.1 years at Flipkart as Senior Machine Learning Engineer with direct FAISS, Sentence-Transformers experience; no behavioral red flags."
+CAND_0052328,55,0.526,6.5 years at Amazon as Recommendation Systems Engineer with direct Pinecone experience; github_activity_score 77.6; no behavioral red flags.
+CAND_0007412,56,0.5252,7.4 years at Zoho as Applied ML Engineer with direct Pinecone experience; no behavioral red flags.
+CAND_0068932,57,0.525,5.2 years at Krutrim as ML Engineer; github_activity_score 70.5; no behavioral red flags.
+CAND_0017960,58,0.5238,7.7 years at Nykaa as Recommendation Systems Engineer with direct Pinecone experience; github_activity_score 92.4; no behavioral red flags.
+CAND_0039383,59,0.523,"7.1 years at Meesho as Applied ML Engineer with direct FAISS, Sentence-Transformers experience; github_activity_score 86.4; no behavioral red flags."
+CAND_0058575,60,0.5227,"5.8 years at Krutrim as AI Engineer with direct FAISS, Sentence-Transformers experience; no behavioral red flags."
+CAND_0020877,61,0.5226,"5.1 years at CRED as Applied ML Engineer with direct FAISS, Sentence-Transformers experience; github_activity_score 74.4; no behavioral red flags."
+CAND_0051630,62,0.5218,"6.0 years at Razorpay as Machine Learning Engineer with direct FAISS, Sentence-Transformers experience; github_activity_score 66.4; no behavioral red flags."
+CAND_0010685,63,0.5217,"6.7 years at Rephrase.ai as NLP Engineer with direct FAISS, Sentence-Transformers experience; no behavioral red flags."
+CAND_0041669,64,0.5215,8.0 years at CRED as Recommendation Systems Engineer with direct Pinecone experience; github_activity_score 70.9; no behavioral red flags.
+CAND_0075249,65,0.5205,"6.2 years at Zomato as Applied ML Engineer with direct FAISS, Sentence-Transformers experience; no behavioral red flags."
+CAND_0052335,66,0.5167,6.4 years at Aganitha as Applied ML Engineer with direct Pinecone experience; no behavioral red flags.
+CAND_0068811,67,0.5162,8.0 years at Freshworks as Applied ML Engineer with direct Pinecone experience; no behavioral red flags.
+CAND_0043228,68,0.5147,"6.8 years at Zoho as Applied ML Engineer with direct FAISS, Sentence-Transformers experience; no behavioral red flags."
+CAND_0069905,69,0.5145,"6.6 years at Sarvam AI as Applied ML Engineer with direct FAISS, Sentence-Transformers experience; no behavioral red flags."
+CAND_0019480,70,0.5112,2.8 years at Meesho as NLP Engineer with direct Pinecone experience; github_activity_score 69.8; no behavioral red flags.
+CAND_0024878,71,0.5102,5.7 years at HCL as AI Specialist; no behavioral red flags.
+CAND_0070398,72,0.5101,"7.2 years at Genpact AI as Machine Learning Engineer with direct FAISS, Sentence-Transformers experience; github_activity_score 63.1; no behavioral red flags."
+CAND_0016163,73,0.5062,"6.7 years at Dream11 as Applied ML Engineer with direct FAISS, Sentence-Transformers experience; github_activity_score 95.0; no behavioral red flags."
+CAND_0007009,74,0.5061,"7.9 years at Wysa as Recommendation Systems Engineer with direct FAISS, Sentence-Transformers experience; github_activity_score 69.2; no behavioral red flags."
+CAND_0027801,75,0.5055,"7.4 years at InMobi as NLP Engineer with direct FAISS, Sentence-Transformers experience; github_activity_score 63.3; no behavioral red flags."
+CAND_0053695,76,0.5049,"5.8 years at Meesho as Recommendation Systems Engineer with direct FAISS, Sentence-Transformers experience; github_activity_score 67.6; no behavioral red flags."
+CAND_0050876,77,0.5038,6.0 years at Freshworks as Applied ML Engineer; github_activity_score 86.1; no behavioral red flags.
+CAND_0083852,78,0.503,6.0 years at Mad Street Den as Data Scientist; github_activity_score 70.8; no behavioral red flags.
+CAND_0031593,79,0.5022,7.8 years at Genpact AI as Search Engineer with direct Pinecone experience; no behavioral red flags.
+CAND_0026942,80,0.5005,6.0 years at Verloop.io as Junior ML Engineer with direct PyTorch experience; github_activity_score 67.1; no behavioral red flags.
+CAND_0081852,81,0.4964,5.9 years at Mad Street Den as Senior Data Scientist with direct Pinecone experience; github_activity_score 87.9; no behavioral red flags.
+CAND_0073883,82,0.4962,5.3 years at Krutrim as AI Specialist; github_activity_score 65.6; no behavioral red flags.
+CAND_0061265,83,0.4951,"6.6 years at Zoho as Recommendation Systems Engineer with direct FAISS, Sentence-Transformers experience; github_activity_score 79.8; no behavioral red flags."
+CAND_0009108,84,0.4924,8.6 years at TCS as QA Engineer with direct Kafka experience; github_activity_score 58.3; no behavioral red flags.
+CAND_0080344,85,0.4904,4.9 years at Zoho as Senior Software Engineer (ML) with direct PyTorch experience; no behavioral red flags.
+CAND_0076251,86,0.4892,"7.6 years at Haptik as Search Engineer with direct FAISS, Sentence-Transformers experience; no behavioral red flags."
+CAND_0093547,87,0.4888,2.9 years at PhonePe as Senior Machine Learning Engineer with direct Pinecone experience; github_activity_score 59.5; no behavioral red flags.
+CAND_0097176,88,0.4886,5.9 years at TCS as ML Engineer with direct PyTorch experience; no behavioral red flags.
+CAND_0030953,89,0.4879,"7.8 years at Nykaa as Search Engineer with direct FAISS, Sentence-Transformers experience; no behavioral red flags."
+CAND_0056627,90,0.4877,6.9 years at Acme Corp as DevOps Engineer with direct Kafka experience; github_activity_score 61.2; no behavioral red flags.
+CAND_0080534,91,0.4876,3.8 years at Genpact AI as ML Engineer; github_activity_score 81.1; no behavioral red flags.
+CAND_0045081,92,0.4864,6.7 years at Mphasis as Software Engineer with direct Kafka experience; no behavioral red flags.
+CAND_0077296,93,0.4859,5.8 years at Ola as Computer Vision Engineer; github_activity_score 76.9; no behavioral red flags.
+CAND_0008295,94,0.4857,6.5 years at Razorpay as AI Research Engineer with direct PyTorch experience; github_activity_score 50.7; no behavioral red flags.
+CAND_0052195,95,0.4855,6.3 years at Sarvam AI as Computer Vision Engineer with direct PyTorch experience; github_activity_score 71.2; no behavioral red flags.
+CAND_0010603,96,0.4846,5.3 years at BYJU'S as ML Engineer; github_activity_score 78.9; no behavioral red flags.
+CAND_0075574,97,0.4833,5.7 years at Haptik as Machine Learning Engineer with direct Pinecone experience; no behavioral red flags.
+CAND_0093331,98,0.4832,"16.1 years at Genpact AI as NLP Engineer with direct FAISS, Sentence-Transformers experience; github_activity_score 74.0; no behavioral red flags."
+CAND_0026532,99,0.4824,"4.8 years at Zomato as Recommendation Systems Engineer with direct FAISS, Sentence-Transformers experience; no behavioral red flags."
+CAND_0053431,100,0.4798,6.1 years at TCS as ML Engineer; github_activity_score 78.3; no behavioral red flags.
