@@ -1,13 +1,22 @@
 team_name: "InfiniCode"
 primary_contact:
-  name: "InfiniCode Member"
-  email: "contact@infinicode.example"
+  name: "SREEHARINI J"
+  email: "sreeharinij@gmail.com"
   phone: "+91-0000000000"
 
 team_members:
-  - name: "InfiniCode Member"
-    email: "contact@infinicode.example"
-    role: "ML Engineer"
+  - name: "SREEHARINI J"
+    email: "sreeharinij@gmail.com"
+    role: "Team Leader"
+  - name: "SREEKUMAR M"
+    email: "sreekumarmanikathnair@gmail.com"
+    role: "Team Member"
+  - name: "Sreya S"
+    email: "sreyasuresh19185@gmail.com"
+    role: "Team Member"
+  - name: "sreejisha m gupta"
+    email: "sreejishamgupta@gmail.com"
+    role: "Team Member"
 
 github_repo: "https://github.com/SreehariniJ/redrob-ranker"
 sandbox_link: "https://huggingface.co/spaces/infinicode/redrob-ranker"

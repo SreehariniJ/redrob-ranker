@@ -12,7 +12,7 @@ def fill_pptx(input_path, output_path):
     s1 = prs.slides[0]
     set_text(s1.shapes[1], "Team Name : InfiniCode")
     set_text(s1.shapes[2], "Problem Statement : Intelligent Candidate Discovery & Ranking")
-    set_text(s1.shapes[3], "Team Leader Name : InfiniCode Member")
+    set_text(s1.shapes[3], "Team Leader Name : SREEHARINI J")
     
     # Slide 2: Solution Overview
     s2 = prs.slides[1]
