@@ -1,5 +1,11 @@
 models/
 __pycache__/
+*.pyc
+.venv/
 *.jsonl
+*.csv
+*.pdf
+*.pptx
 ~$*
 test_submission.csv
+.DS_Store
