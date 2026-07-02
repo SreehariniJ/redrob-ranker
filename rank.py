@@ -215,7 +215,8 @@ def check_red_flags(profile, career_history, skills, signals):
     gh_score = signals.get("github_activity_score", 0)
     response_rate = signals.get("recruiter_response_rate", 0)
 
-    if yoe >= 10 and gh_score == 0 and response_rate == 0:
+    # github_activity_score of -1 means no GitHub linked — treat as 0
+    if yoe >= 10 and gh_score <= 0 and response_rate == 0:
         return True, 1.0
 
     for skill in skills:
@@ -251,7 +252,7 @@ def compute_behavioral_score(signals):
     response_rate = signals.get("recruiter_response_rate", 0)
     score += response_rate * 0.5
 
-    gh_score = signals.get("github_activity_score", 0)
+    gh_score = max(0, signals.get("github_activity_score", 0))  # -1 means no GitHub
     if gh_score > 0:
         score += (min(gh_score, 100) / 100.0) * 0.3
 
@@ -389,7 +390,7 @@ def main():
             (WEIGHTS["behavioral"] * behav_score) +
             (WEIGHTS["recency"] * recency)
         )
-        final_score = round(final_score, 4)
+        final_score = round(final_score, 6)
 
         found_tech = extract_tech(career)
         reasoning = generate_reasoning(cand, sem_score, career_score, behav_score, recency, penalty, found_tech, i)
@@ -404,7 +405,7 @@ def main():
         writer.writerow(["candidate_id", "rank", "score", "reasoning"])
         for rank, item in enumerate(top_100, 1):
             _, cid, score, reason = item
-            writer.writerow([cid, rank, round(score, 4), reason])
+            writer.writerow([cid, rank, round(score, 6), reason])
 
     print("Done!")
 

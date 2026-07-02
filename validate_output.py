@@ -78,7 +78,7 @@ def validate(csv_path):
 
     print("  Score Histogram:")
     for i in range(9, -1, -1):
-        bar = "█" * buckets[i]
+        bar = "#" * buckets[i]
         lo = i / 10
         hi = (i + 1) / 10
         print(f"    {lo:.1f}-{hi:.1f} | {bar} ({buckets[i]})")
@@ -105,7 +105,7 @@ def validate(csv_path):
         print()
 
     print(f"{'='*60}")
-    print(f"  ALL CHECKS PASSED ✓")
+    print(f"  ALL CHECKS PASSED [OK]")
     print(f"{'='*60}")
 
 
