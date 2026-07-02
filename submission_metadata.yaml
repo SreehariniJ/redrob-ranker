@@ -41,10 +41,12 @@ ai_usage_summary: |
   No candidate data was fed to any LLM. Local semantic search was used.
 
 methodology_summary: |
-  Explicitly-weighted hybrid ranker. We use a 3-part formula:
-  1. Semantic Match (40%): Local all-MiniLM-L6-v2 cosine similarity between JD and candidate summary/experience.
-  2. Rule-based Heuristics (30%): Extraction of vector DBs, Python, retrieval terms from experience (not just skills), with penalization for pure consulting or research backgrounds.
-  3. Behavioral Signals (30%): Log-transformed response rates, github activity, and recency.
+  Explicitly-weighted hybrid ranker with a 2-pass pipeline:
+  1. Semantic Match (35%): BAAI/bge-small-en-v1.5 cosine similarity between JD and candidate summary/experience.
+  2. Career Relevance (25%): Extraction of vector DBs, ML keywords from experience (not just skills), with penalization for pure consulting or research backgrounds.
+  3. Behavioral Signals (20%): Recruiter response rate, GitHub activity, and interview completion rate.
+  4. Recency (10%): Exponential decay based on last active date.
+  5. Honeypot Penalty (10%): Proportional multiplier for ghosting risk and resume padding.
   Runtime is ~1 min for 100K candidates on CPU.
 
 declarations:

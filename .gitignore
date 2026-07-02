@@ -4,8 +4,11 @@ __pycache__/
 .venv/
 *.jsonl
 *.csv
+!InfiniCode.csv
 *.pdf
 *.pptx
 ~$*
 test_submission.csv
 .DS_Store
+AGENTS.md
+.agents/

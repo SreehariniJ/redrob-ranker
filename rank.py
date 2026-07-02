@@ -4,6 +4,7 @@ import argparse
 import os
 import heapq
 import math
+import re
 import torch
 from datetime import datetime
 from sentence_transformers import SentenceTransformer, util
@@ -18,13 +19,31 @@ WEIGHTS = {
 
 QUERY_INSTRUCTION = "Represent this sentence for searching relevant passages: "
 
-JD_TEXT = """
+JD_TEXT_FALLBACK = """
 Senior AI Engineer — Founding Team. We need deep technical depth in modern ML systems — embeddings, retrieval, ranking, LLMs, fine-tuning. 
 Production experience with embeddings-based retrieval systems (sentence-transformers, OpenAI embeddings, BGE, E5) deployed to real users.
 Production experience with vector databases or hybrid search infrastructure (Pinecone, Weaviate, Qdrant, Milvus, OpenSearch, Elasticsearch, FAISS).
 Strong Python code quality. Hands-on experience designing evaluation frameworks for ranking systems (NDCG, MRR, MAP, offline-to-online correlation, A/B test).
 Not pure research. Not just LangChain to OpenAI. Not pure consulting firms. Needs to write code.
 """
+
+
+def load_jd_text():
+    """Load JD from job_description.docx if available, otherwise use fallback."""
+    docx_path = os.path.join(os.path.dirname(__file__), "job_description.docx")
+    if os.path.exists(docx_path):
+        try:
+            from docx import Document
+            doc = Document(docx_path)
+            text = "\n".join([p.text for p in doc.paragraphs if p.text.strip()])
+            if text.strip():
+                print(f"Loaded JD from {docx_path} ({len(text)} chars)")
+                return text
+        except ImportError:
+            print("python-docx not installed, using fallback JD text.")
+        except Exception as e:
+            print(f"Error reading {docx_path}: {e}, using fallback JD text.")
+    return JD_TEXT_FALLBACK.strip()
 
 CONSULTING_COMPANIES = {
     "tcs", "infosys", "wipro", "accenture", "cognizant", "capgemini",
@@ -145,6 +164,10 @@ def compute_career_relevance_score(profile, career_history, skills):
     full_career_text = " ".join([j.get("description", "").lower() for j in career_history])
     has_senior_context = any(s in full_career_text for s in senior_keywords)
 
+    research_titles = {"research assistant", "postdoc", "postdoctoral", "phd researcher",
+                       "research fellow", "principal researcher", "staff researcher",
+                       "research intern", "visiting researcher", "research associate"}
+
     for job in career_history:
         desc = job.get("description", "").lower()
         title = job.get("title", "").lower()
@@ -155,10 +178,12 @@ def compute_career_relevance_score(profile, career_history, skills):
         if any(m in desc for m in ml_keywords):
             has_ml_keywords = True
 
-        if not any(c in company for c in CONSULTING_COMPANIES):
+        # Word-boundary matching to avoid 'ey' matching 'journey', etc.
+        is_consulting = any(re.search(r'\b' + re.escape(c) + r'\b', company) for c in CONSULTING_COMPANIES)
+        if not is_consulting:
             pure_consulting = False
 
-        if "research assistant" not in title and "postdoc" not in title:
+        if not any(r in title for r in research_titles):
             pure_research = False
 
     if has_vector_db:
@@ -311,7 +336,8 @@ def main():
     else:
         model = SentenceTransformer('BAAI/bge-small-en-v1.5')
 
-    jd_embedding = model.encode(QUERY_INSTRUCTION + JD_TEXT.strip(), convert_to_tensor=True, show_progress_bar=False, normalize_embeddings=True)
+    jd_text = load_jd_text()
+    jd_embedding = model.encode(QUERY_INSTRUCTION + jd_text.strip(), convert_to_tensor=True, show_progress_bar=False, normalize_embeddings=True)
 
     first_pass_candidates = []
 
@@ -344,7 +370,7 @@ def main():
             summary = profile.get("summary", "")
             first_pass_candidates.append((-fast_score, cid, cand, summary, career, career_score, behav_score, recency, penalty))
 
-    top_candidates = heapq.nsmallest(2000, first_pass_candidates)
+    top_candidates = heapq.nsmallest(5000, first_pass_candidates)
     print(f"Pass 1 complete: selected top {len(top_candidates)} candidates")
 
     print(f"Running batched semantic similarity on {len(top_candidates)} candidates...")
